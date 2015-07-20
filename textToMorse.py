@@ -1,5 +1,5 @@
 import string
-test=string.lower(raw_input('-->'))
+#test=string.lower(raw_input('-->'))
 
 D= {}
 D["a"]="-."
@@ -28,9 +28,24 @@ D["w"]=".--"
 D["x"]="-..-"
 D["y"]="-.--"
 D["z"]="--.."
-D[" "]=""
-B=""
-
+D[" "]=" "
+D['1']=''
+D['2']=''
+D['3']=''
+D['4']=''
+D['5']=''
+D['6']=''
+D['7']=''
+D['8']=''
+D['9']=''
+def function(a):
+	B=""
+	for i in a:
+		B+=D[i]+"/"
+	return B
+'''
 for i in test:
 		B+=D[i]+"/"
 print B
+#'''
+
